@@ -14,4 +14,4 @@ Update `~/InstaTrack/apprise/notifier.sh` to send notifications to you as you se
 
 Run `ICDTService.sh` once.
 
-Set up a schedule in your cron to run this at a time(s) of your choosing.
+Set up a schedule in your cron to run `ICDTService.sh` at a time(s) of your choosing.
