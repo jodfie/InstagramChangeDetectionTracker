@@ -44,18 +44,6 @@ fi
 echo "Changing to '${INSTATRACK_PATH}'"
 cd "${INSTATRACK_PATH}"
 
-if [[ ! -f "${INSTATRACK_PATH}/InstaTrackChangeDetection.sh" ]]; then
-    echo "Getting latest InstaTrackChangeDetection.sh script"
-    curl -sSL https://gist.githubusercontent.com/MagicalCodeMonkey/24a1a4579076a12cda207849b84b9601/raw/InstaTrackChangeDetection.sh -o "${INSTATRACK_PATH}/InstaTrackChangeDetection.sh"
-    echo "Done."
-    echo "Run 'bash InstaTrackChangeDetection.sh' or '${INSTATRACK_PATH}/InstaTrackChangeDetection.sh' from now on."
-    echo "Exiting..."
-    exit
-fi
-
-echo "Getting latest InstaTrackWithExcelOutput.py script"
-curl -sSL https://gist.githubusercontent.com/MagicalCodeMonkey/24a1a4579076a12cda207849b84b9601/raw/InstaTrackWithExcelOutput.py -o "${INSTATRACK_PATH}/InstaTrackWithExcelOutput.py"
-
 if [[ ! -f "${INSTATRACK_PATH}/${INSTAGRAM_USERS_FILE}" ]]; then
     echo "Users file does not exist: '${INSTATRACK_PATH}/${INSTAGRAM_USERS_FILE}'"
     exit 1
